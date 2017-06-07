@@ -1,4 +1,4 @@
-package com.java.implementations.algorithms;
+package com.java.implementations.algorithms.searching;
 
 import java.util.Scanner;
 
@@ -27,6 +27,7 @@ public class LinearSearch {
 		} else {
 			System.out.println("Element found at index : " + index);
 		}
+		scanner.close();
 	}
 
 }

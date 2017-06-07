@@ -1,4 +1,4 @@
-package com.java.implementations.algorithms;
+package com.java.implementations.algorithms.searching;
 
 import java.util.PriorityQueue;
 import java.util.Queue;
