@@ -6,20 +6,26 @@ public class BinarySearch {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("Enter total elements: ");
-		int totalElements = scanner.nextInt();
-		int array[] = new int[totalElements];
-		System.out.println("Enter array elements in sorted order: ");
-		for (int i = 0; i < totalElements; i++) {
-			array[i] = scanner.nextInt();
-		}
-		System.out.println("Enter element to search: ");
-		int element = scanner.nextInt();
-		int index = binarySearch(0, totalElements - 1, element, array);
-		if (index == -1) {
-			System.out.println("Element not found!");
-		} else {
-			System.out.println("Element found at index : " + (index + 1));
+		try {
+			System.out.println("Enter total elements: ");
+			int totalElements = scanner.nextInt();
+			int array[] = new int[totalElements];
+			System.out.println("Enter array elements in sorted order: ");
+			for (int i = 0; i < totalElements; i++) {
+				array[i] = scanner.nextInt();
+			}
+			System.out.println("Enter element to search: ");
+			int element = scanner.nextInt();
+			int index = binarySearch(0, totalElements - 1, element, array);
+			if (index == -1) {
+				System.out.println("Element not found!");
+			} else {
+				System.out.println("Element found at index : " + (index + 1));
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			scanner.close();
 		}
 	}
 
