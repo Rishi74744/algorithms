@@ -1,6 +1,5 @@
 package com.java.implementations.algorithms.sorting;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class MergeSort {
@@ -51,23 +50,16 @@ public class MergeSort {
 		int k = start;
 		while (i < leftSubArraySize && j < rightSubArraySize) {
 			if (leftSubArray[i] <= rightSubArray[j]) {
-				array[k] = leftSubArray[i];
-				i++;
+				array[k++] = leftSubArray[i++];
 			} else {
-				array[k] = rightSubArray[j];
-				j++;
+				array[k++] = rightSubArray[j++];
 			}
-			k++;
 		}
 		while (i < leftSubArraySize) {
-			array[k] = leftSubArray[i];
-			i++;
-			k++;
+			array[k++] = leftSubArray[i++];
 		}
 		while (j < rightSubArraySize) {
-			array[k] = rightSubArray[j];
-			j++;
-			k++;
+			array[k++] = rightSubArray[j++];
 		}
 	}
 
