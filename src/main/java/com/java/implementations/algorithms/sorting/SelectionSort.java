@@ -7,8 +7,10 @@ public class SelectionSort {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		try {
+			System.out.println("Enter the size of array:");
 			int arraySize = scanner.nextInt();
 			int array[] = new int[arraySize];
+			System.out.println("Enter array elements to sort");
 			for (int i = 0; i < arraySize; i++) {
 				array[i] = scanner.nextInt();
 			}
