@@ -27,7 +27,6 @@ public class CountingSort {
 	public static void performSorting(int array[], int max) {
 		int countArray[] = new int[max];
 		for (int i = 0; i < array.length; i++) {
-			// System.out.println("value : "+countArray[i] + 1);
 			countArray[array[i]] = countArray[array[i]] + 1;
 		}
 		for (int i = 1; i < max; i++) {
